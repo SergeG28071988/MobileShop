@@ -1,0 +1,12 @@
+﻿<h2>Все телефоны</h2>
+<h3>@Model.CurrCategory</h3>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Mobile mobile in Model.AllMobiles)
+        {
+            @Html.Partial("AllMobiles", mobile)       
+        }
+    }
+</div>
+
